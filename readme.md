@@ -1,0 +1,1 @@
+Trabalho referente a disciplina de programação orientada a objetos, conteúdo de abstração de classes
