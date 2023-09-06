@@ -1,6 +1,6 @@
 package Fila;
 
-public class FilaPadrao <A> implements Fila <A>
+public class FilaPadrao <A> implements Fila <A> 
 {
 	@SuppressWarnings("unchecked")
 	A[] fila = (A[]) new Object[10];
@@ -24,7 +24,7 @@ public class FilaPadrao <A> implements Fila <A>
 	public void remove() 
 	{
 		//int i = fila.length - 1; i >= 0; i--
-		for(int i = 0; i < fila.length - 1; i++)
+		for(int i = 0; i < fila.length - 1; i++) 
 		{
 			if (fila[i] != null)
 			{
@@ -59,8 +59,7 @@ public class FilaPadrao <A> implements Fila <A>
 		
 		for (int i = 0; i < fila.length - 1; i++)
 		{
-			if (fila[i] == null)
-			{
+			if (fila[i] == null) {
 				a = false;
 			}
 		}
@@ -69,11 +68,16 @@ public class FilaPadrao <A> implements Fila <A>
 	}
 
 	
+	@Override
 	public String to_String()
 	{
-		return "[" + fila[0] + "]" + " " + "[" + fila[1] + "]" + " " + "[" + fila[2] + "]" + 
-				" " + "[" + fila[3] + "]" + " " + "[" + fila[4] + "]" + " " + "[" + fila[5] + "]" 
-				+ " " + "[" + fila[6] + "]" + " " + "[" + fila[7] + "]" + " " + "[" + fila[8] + "]" 
-				+ " " + "[" + fila[9] + "]";
+		String retorno;
+		for(int i = 0; i < fila.length - 1; i++) 
+		{
+			retorno += "[" + fila[i] + "]" + " ";
+		}
+
+		return retorno;
 	}
+
 }
