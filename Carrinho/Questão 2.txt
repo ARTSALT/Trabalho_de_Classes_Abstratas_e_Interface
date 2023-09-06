@@ -1,0 +1,7 @@
+Questão_2
+	Polimorfismo de sobreposição ocorre ao sobrepor o método getDescricao() da classe pai, Produto.
+	
+	Polimorfismo de inclusão foi utilizado na classe Principal ao declarar um ArrayList do tipo
+	 Produto e em seguida preenche-lo com objetos das classes filhas.
+	 
+	Polimorfismo Ad-hoc e paramétrico não foram usados na implementação.
